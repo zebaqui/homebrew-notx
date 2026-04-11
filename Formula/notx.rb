@@ -3,16 +3,16 @@
 class Notx < Formula
   desc "notx — lightweight event-streaming / notification engine"
   homepage "https://github.com/zebaqui/notx-engine"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zebaqui/notx-engine/releases/download/v0.0.4/notx-v0.0.4-darwin-arm64.tar.gz"
-      sha256 ""
+      url "https://github.com/zebaqui/notx-engine/releases/download/v0.0.5/notx-v0.0.5-darwin-arm64.tar.gz"
+      sha256 "b34e00d13cba0ddf6c5df28849a068ae3905848017c34f03e95db3c12f644a88"
     else
-      url "https://github.com/zebaqui/notx-engine/releases/download/v0.0.4/notx-v0.0.4-darwin-amd64.tar.gz"
-      sha256 "c1bb39792937643b8c9971ee6affe097851175d14825818e8af663ee693549a8"
+      url "https://github.com/zebaqui/notx-engine/releases/download/v0.0.5/notx-v0.0.5-darwin-amd64.tar.gz"
+      sha256 ""
     end
   end
 
