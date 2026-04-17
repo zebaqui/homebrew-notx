@@ -3,16 +3,16 @@
 class NotxDesktop < Formula
   desc "notx desktop — Electron client for the notx engine"
   homepage "https://github.com/zebaqui/notx"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zebaqui/notx/releases/download/v0.0.2/notx-v0.0.2-darwin-arm64.zip"
-      sha256 ""
+      url "https://github.com/zebaqui/notx-engine/releases/download/v0.0.3/notx-v0.0.3-darwin-arm64.zip"
+      sha256 "a6a2775cdc166f4c7519d3eeca4925047c91706048453c2551a3bc0980ffa6ce"
     else
-      url "https://github.com/zebaqui/notx/releases/download/v0.0.2/notx-v0.0.2-darwin-amd64.zip"
-      sha256 "cfc15d64771480c11c322ee3e0feb7e3634c96f9bd94528df0abc211ee407f4d"
+      url "https://github.com/zebaqui/notx-engine/releases/download/v0.0.3/notx-v0.0.3-darwin-amd64.zip"
+      sha256 ""
     end
   end
 
