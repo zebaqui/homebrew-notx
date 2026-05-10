@@ -7,17 +7,12 @@ class Notx < Formula
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
       url "https://github.com/zebaqui/notx-engine/releases/download/v0.0.7/notx-v0.0.7-darwin-arm64.tar.gz"
       sha256 ""
-    else
-      url "https://github.com/zebaqui/notx-engine/releases/download/v0.0.7/notx-v0.0.7-darwin-amd64.tar.gz"
-      sha256 "378f4eb29fef4fe33d207e4ecbb146c3806cf63da24f360347d7bfa404931ab1"
-    end
   end
 
   def install
-    bin.install "notx-darwin-#{Hardware::CPU.arm? ? "arm64" : "amd64"}" => "notx"
+    bin.install "notx-darwin-arm64" => "notx"
   end
 
   test do
